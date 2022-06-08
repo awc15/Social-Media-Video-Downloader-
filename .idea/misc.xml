@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MyProjects/social_media_video_downloader/code/smvd/app/src/main/res/drawable/ic_fb.xml" value="0.1255" />
         <entry key="..\:/MyProjects/social_media_video_downloader/code/smvd/app/src/main/res/drawable/ic_fb_background.xml" value="0.1255" />
+        <entry key="..\:/MyProjects/social_media_video_downloader/code/smvd/app/src/main/res/layout/activity_facebook.xml" value="0.2421875" />
+        <entry key="..\:/MyProjects/social_media_video_downloader/code/smvd/app/src/main/res/layout/activity_facebook_video_downloader.xml" value="0.2421875" />
         <entry key="..\:/MyProjects/social_media_video_downloader/code/smvd/app/src/main/res/layout/activity_main.xml" value="0.2421875" />
         <entry key="..\:/MyProjects/social_media_video_downloader/code/smvd/app/src/main/res/mipmap-anydpi-v26/ic_fb.xml" value="0.1125" />
       </map>
