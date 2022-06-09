@@ -84,6 +84,7 @@ class SplashActivity : AppCompatActivity() {
         }, 1000)
     }
 
+
     private fun arePermissionDenied(): Boolean {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             return checkStorageApi30()

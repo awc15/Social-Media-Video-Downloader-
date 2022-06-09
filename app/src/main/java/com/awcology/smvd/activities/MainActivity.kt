@@ -21,8 +21,11 @@ class MainActivity : AppCompatActivity() {
         binding!!.cvFb.setOnClickListener {
             startActivity(Intent(mContext, FacebookVideoDownloader::class.java))
         }
-        binding!!.cvWhatsapp.setOnClickListener{
-            Util.showAlertDialog(mContext,"ALERT","This feature is under development.")
+        binding!!.cvWhatsapp.setOnClickListener {
+            Util.showAlertDialog(mContext, "ALERT", "This feature is under development.")
+        }
+        binding!!.tvPrivacyPolicy.setOnClickListener {
+            Util.showAlertDialog(mContext, "Privacy Policy", getString(R.string.privacy_policy))
         }
     }
 
