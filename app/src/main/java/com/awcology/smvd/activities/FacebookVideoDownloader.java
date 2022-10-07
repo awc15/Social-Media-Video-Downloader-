@@ -44,7 +44,11 @@ public class FacebookVideoDownloader extends AppCompatActivity {
             public void onClick(View view) {
 
                 if (Util.isNetworkConnected(mContext)) {
-                    getFacebookData();
+                    if (Util.haveStoragePermission(mContext)){
+                        getFacebookData();
+                    }else{
+                        Util.showAlertDialog(mContext,"ERROR","Don't Have permission");
+                    }
                 } else {
                     Util.showAlertDialog(mContext, "ERROR", "No internet.");
                 }
@@ -103,7 +107,8 @@ public class FacebookVideoDownloader extends AppCompatActivity {
         @Override
         protected void onPostExecute(String videoURL) {
             if (!videoURL.equals("")) {
-                Util.download(videoURL, Util.rootDirectoryFacebook, mContext, "smvd_" + System.currentTimeMillis() + ".mp4");
+                Util.download(videoURL, Environment.getExternalStorageDirectory()
+                        + "/Download", mContext, "smvd_" + System.currentTimeMillis() + ".mp4");
             } else {
                 Util.showAlertDialog(mContext, "ERROR", "URL is invalid or issue due to privacy policy.");
             }
